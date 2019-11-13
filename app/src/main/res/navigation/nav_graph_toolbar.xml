@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph_toolbar"
+    app:startDestination="@id/contentAFragment">
+
+    <fragment
+        android:id="@+id/contentAFragment"
+        android:name="io.github.lettucech.navcompexamples.fragment.ContentAFragment"
+        android:label="ContentAFragment" >
+        <action
+            android:id="@+id/action_contentAFragment_to_contentBFragment"
+            app:destination="@id/contentBFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contentBFragment"
+        android:name="io.github.lettucech.navcompexamples.fragment.ContentBFragment"
+        android:label="ContentBFragment" />
+</navigation>
